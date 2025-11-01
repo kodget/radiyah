@@ -8,26 +8,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'deep-brown': '#6B2B18',
-        'muted-beige': '#EAD9C9',
-        'warm-cream': '#F5E8DB',
-        'soft-rust': '#A65435',
+        'emerald': '#0B3D3A',
+        'burgundy': '#7A1E25',
         'gold': '#D4AF37',
-        'off-white': '#FDF8F2',
+        'marble': '#F5F5F5',
+        'white': '#FFFFFF',
+        'black': '#000000',
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'serif': ['Merriweather', 'serif'],
-        'script': ['Great Vibes', 'cursive'],
+        'display': ['Cinzel Decorative', 'serif'],
+        'body': ['Cormorant Garamond', 'serif'],
+        'script': ['Alex Brush', 'cursive'],
       },
       spacing: {
-        'section': '3rem',
-        'section-lg': '4rem',
-        'inner': '2.5rem',
-        'footer': '2rem',
+        'section': '4rem',
+        'section-lg': '6rem',
+        'inner': '3rem',
+        'breathing': '2rem',
       },
-      lineHeight: {
-        'elegant': '1.5',
+      backgroundImage: {
+        'marble': 'linear-gradient(135deg, #F5F5F5 0%, #EFEFEF 100%)',
+        'emerald-gradient': 'linear-gradient(135deg, #0B3D3A 0%, #0F4A46 100%)',
       },
     },
   },

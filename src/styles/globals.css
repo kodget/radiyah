@@ -1,23 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;600;700&family=Alex+Brush&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    background-color: #EAD9C9;
-    color: #6B2B18;
-    font-family: 'Merriweather', serif;
+    background-color: #F5F5F5;
+    color: #FFFFFF;
+    font-family: 'Cormorant Garamond', serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
   }
   
   h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel Decorative', serif;
     font-weight: 700;
+    color: #D4AF37;
   }
   
   .script {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Alex Brush', cursive;
+    color: #D4AF37;
+  }
+  
+  .floral-frame {
+    position: relative;
+  }
+  
+  .floral-frame::before,
+  .floral-frame::after {
+    content: '🌹';
+    position: absolute;
+    font-size: 1.5rem;
+    color: #7A1E25;
+  }
+  
+  .floral-frame::before {
+    top: -0.5rem;
+    left: -0.5rem;
+  }
+  
+  .floral-frame::after {
+    bottom: -0.5rem;
+    right: -0.5rem;
+  }
+  
+  .gold-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    margin: 2rem 0;
   }
 }
