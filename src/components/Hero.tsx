@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="text-center px-8 max-w-4xl mx-auto">
           <div className="mb-8">
             <h1 className="font-display text-5xl md:text-7xl text-gold mb-4">
-              Radiyah & Isma'eel
+              Rodiyyah & Isma'eel
             </h1>
             <div className="gold-divider"></div>
             <p className="font-script text-3xl md:text-4xl text-gold mb-6">

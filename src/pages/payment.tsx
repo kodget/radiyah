@@ -100,7 +100,7 @@ const Payment = () => {
             </p>
             <p className="font-script text-2xl text-gold text-center">
               With heartfelt gratitude,<br />
-              Radiyah & Isma'eel 💕
+              Rodiyyah & Isma'eel 💕
             </p>
           </div>
 

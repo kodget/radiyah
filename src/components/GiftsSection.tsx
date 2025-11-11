@@ -11,7 +11,7 @@ const AccountDetailsSection = () => {
           <div className="gold-divider max-w-md mx-auto mb-6"></div>
           <p className="font-body text-xl text-emerald/80 max-w-3xl mx-auto leading-relaxed">
             Your generous contributions will help 
-            <span className="font-script text-gold text-2xl"> Radiyah & Isma'eel </span>
+            <span className="font-script text-gold text-2xl"> Rodiyyah & Isma'eel </span>
             create their blessed home together.
           </p>
         </div>

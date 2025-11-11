@@ -9,7 +9,7 @@ const WelcomeSection = () => {
             </h2>
             <div className="gold-divider mb-6"></div>
             <p className="font-body text-xl text-emerald leading-relaxed mb-8">
-              As Radiyah and Isma'eel embark on their sacred journey together, 
+              As Rodiyyah and Isma'eel embark on their sacred journey together, 
               your generous gifts will help them build a home filled with 
               barakah and love.
             </p>
