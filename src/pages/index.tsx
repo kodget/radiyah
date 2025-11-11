@@ -1,13 +1,13 @@
 import Hero from '../components/Hero';
 import WelcomeSection from '../components/WelcomeSection';
-import GiftsSection from '../components/GiftsSection';
+import AccountDetailsSection from '../components/GiftsSection';
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <WelcomeSection />
-      <GiftsSection />
+      <AccountDetailsSection />
     </div>
   );
 }

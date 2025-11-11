@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="text-center mb-8">
           <div className="gold-divider max-w-md mx-auto mb-6"></div>
           <h3 className="font-script text-3xl text-gold mb-4">
-            Radiyah & Ibrahim
+            Radiyah & Isma'eel
           </h3>
           <p className="font-body text-white/80 text-lg">
             May Allah bless our union with love, peace, and prosperity

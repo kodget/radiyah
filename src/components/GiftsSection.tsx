@@ -1,80 +1,62 @@
-import Image from "next/image";
-import { useRouter } from "next/router";
-import { giftItems } from "../constants";
+import { bankDetails } from "../constants";
 
-const GiftsSection = () => {
-  const router = useRouter();
-
-  const handlePayment = (gift: (typeof giftItems)[0]) => {
-    router.push(
-      `/payment?item=${encodeURIComponent(
-        gift.name
-      )}&price=${encodeURIComponent(gift.price)}`
-    );
-  };
-
+const AccountDetailsSection = () => {
   return (
     <section className="min-h-screen bg-marble py-section-lg px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl text-emerald mb-6">
             Blessed Gifts for the Couple
           </h2>
           <div className="gold-divider max-w-md mx-auto mb-6"></div>
           <p className="font-body text-xl text-emerald/80 max-w-3xl mx-auto leading-relaxed">
-            Choose from these carefully selected items to help 
-            <span className="font-script text-gold text-2xl"> Radiyah & Ibrahim </span>
+            Your generous contributions will help 
+            <span className="font-script text-gold text-2xl"> Radiyah & Isma'eel </span>
             create their blessed home together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {giftItems.map((gift) => (
-            <div
-              key={gift.id}
-              className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gold/20 hover:border-gold/40"
-            >
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={gift.image}
-                  alt={gift.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  quality={95}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute top-4 right-4">
-                  <span className="text-2xl">🌹</span>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <h3 className="font-display text-2xl text-emerald mb-3">
-                  {gift.name}
-                </h3>
-                <p className="font-body text-emerald/70 mb-4 leading-relaxed">
-                  {gift.description}
-                </p>
-
-                <div className="mb-6">
-                  <span className="font-display text-3xl text-burgundy">
-                    ₦{gift.price}
-                  </span>
-                </div>
-
-                <button
-                  onClick={() => handlePayment(gift)}
-                  className="w-full bg-emerald hover:bg-emerald/90 text-white py-3 rounded-lg font-body text-lg transition-all duration-300 hover:shadow-lg border-2 border-gold/30 hover:border-gold"
-                >
-                  🎁 Bless with This Gift
-                </button>
-              </div>
+        <div className="bg-white rounded-lg shadow-xl p-12 border border-gold/20 text-center">
+          <h3 className="font-display text-3xl text-emerald mb-8">
+            Account Details
+          </h3>
+          <div className="gold-divider max-w-sm mx-auto mb-8"></div>
+          
+          <div className="space-y-6">
+            <div>
+              <p className="font-body text-emerald/70 text-lg mb-2">Account Number</p>
+              <p className="font-display text-4xl font-bold text-burgundy">
+                {bankDetails.accountNumber}
+              </p>
             </div>
-          ))}
+            
+            <div>
+              <p className="font-body text-emerald/70 text-lg mb-2">Bank Name</p>
+              <p className="font-display text-3xl font-bold text-emerald">
+                {bankDetails.bankName}
+              </p>
+            </div>
+            
+            <div>
+              <p className="font-body text-emerald/70 text-lg mb-2">Account Name</p>
+              <p className="font-display text-3xl font-bold text-emerald">
+                {bankDetails.accountName}
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 p-6 bg-gold/10 rounded-lg border border-gold/30">
+            <p className="font-script text-2xl text-gold mb-2">
+              Barakallahu Lakuma
+            </p>
+            <p className="font-body text-emerald/80 text-lg">
+              May Allah bless your generous contribution
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default GiftsSection;
+export default AccountDetailsSection;
